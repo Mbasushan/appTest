@@ -29,14 +29,14 @@ class VipPlay(unittest.TestCase):
         vipAduio.Vip.test_vip_homePage(self)
 
     #播放页
-    def test_play(self):
-        print("大咖音频播放页")
+    #def test_play(self):
+        #print("大咖音频播放页")
         #判断是否是vip
-        isvip=isVip.isVip(self)
+        #isvip=isVip.isVip(self)
         #if isVip:
 
         #else:
            #self.driver.find_element_by_id('llNote').is_displayed()
 
-     def tearDown(self):
-            self.driver.quit()
+    def tearDown(self):
+        self.driver.quit()
