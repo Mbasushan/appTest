@@ -6,6 +6,8 @@ from selenium import webdriver
 from appium import webdriver
 import tool.isElement as isElement
 import tool.back as back
+import tool.swipe as swipe
+import testcase.advertisements.splashAd as splashAd
 
 class Ad(unittest.TestCase):
 
@@ -24,69 +26,8 @@ class Ad(unittest.TestCase):
         self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
         sleep(5)
 
-    # 判断是否有引导图
-    def test_aa_layout_iv_bg(self):
-        print("引导图")
-        ivBg = isElement.find_Element(self, 'id', 'layout_iv_bg')
-        if ivBg:
-            print("引导图存在")
-            # 左滑
-            screen = self.get_size()
-            num = 1
-            while (num <= 4):
-                self.driver.swipe(screen[0] * 0.75, screen[1] * 0.5, screen[0] * 0.05, screen[1] * 0.5, 6000)
-                print('第', num, '张引导图')
-                num + +1
-            self.driver.find_element_by_id('layout_iv_bg').click()
-            sleep(5)
-        else:
-            print("无引导图")
 
-    #闪屏广告点击跳转
-    def test_splash_tv_skip(self):
-        #判断是否有闪屏广告
-        print('判断是否有闪屏广告')
-        driver=self.driver
-        splash=isElement.find_Element(self,'id','splash_iv_image')
-        if splash:
-            print('有闪屏广告点击【跳过】')
-            driver.find_element_by_id('splash_tv_skip').click()
-            Ad.test_is_ad(self)
-        else:
-            print('test_splash_tv_skip无闪屏广告')
-
-    #不点击跳过闪屏广告，倒计时结束
-    def test_noSkip(self):
-        print('不点击跳过闪屏广告，倒计时结束')
-        # 判断是否有闪屏广告
-        driver = self.driver
-        splash = isElement.find_Element(self, 'id', 'splash_iv_image')
-        #不点击闪屏广告或者跳过按钮，倒计时结束跳转到首页
-        if splash:
-            print('有闪屏广告不做操作等倒计时')
-            sleep(10)
-            #判断是否有首页广告
-            Ad.test_is_ad(self)
-        else:
-            print('test_noSkip无闪屏广告')
-
-    #点击闪屏广告
-    def test_ad(self):
-        #判断是否有更新弹窗
-        splash = isElement.find_Element(self, 'id', 'splash_iv_image')
-        if splash:
-            print('点击闪屏广告')
-            self.driver.find_element_by_id('splash_iv_image').click()
-            sleep(5)
-            #返回
-            back.ivBack(self)
-            #执行操作：判断是否有闪屏广告
-            Ad.test_is_ad(self)
-        else:
-            print('test_ad无闪屏广告')
-
-
-    # 判断是否有更新版本弹窗---有点击稍后安装
+    #判断是否有更新版本弹窗---有点击稍后安装
     def test_ask_tv_cancel(self):
         print('稍后安装用例')
         askTvTitle = isElement.find_Element(self, 'id', 'ask_tv_title')
@@ -110,18 +51,6 @@ class Ad(unittest.TestCase):
             print("不存在有更新版本弹窗")
             sleep(5)
 
-    #判断是否有好评弹窗
-    def test_praise(self):
-        print("是否有好评弹窗")
-        tvPraise=isElement.find_Element(self,'id','tvPraise')
-        sleep(5)
-        if tvPraise:
-            print("存在好评弹窗，点击【取消】")
-            self.driver.find_element_by_id('tvCnacle').click()
-        else:
-            print("不存在好评弹窗")
-
-
     # 判断是否有首页广告
     def test_is_ad(self):
         driver = self.driver
@@ -142,7 +71,7 @@ class Ad(unittest.TestCase):
     def test_home_slideshow(self):
         print('banner图')
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         #判断是否有首页广告
         Ad.test_is_ad(self)
         sleep(5)
@@ -155,7 +84,7 @@ class Ad(unittest.TestCase):
     def test_home_banner(self):
         print('首页横幅广告')
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
         Ad.test_is_ad(self)
         #判断是否有首页横幅广告
@@ -167,67 +96,17 @@ class Ad(unittest.TestCase):
         else:
             print('不存在横幅广告')
 
-    #搜索里的广告
-    def test_search_ad(self):
-        print('搜索首页广告')
-        # 判断是否有闪屏广告
-        Ad.test_ad(self)
-        # 判断是否有首页广告
-        Ad.test_is_ad(self)
-        self.driver.find_element_by_id('toolbar_iv_search').click()
-        sleep(5)
-        #收起键盘
-        self.driver.hide_keyboard()
-        #点击首个广告：目前是大咖广告
-        self.driver.find_elements_by_id("com.mbalib.android.wiki:id/image")[0].click()
-        back.ivBack(self)
-        #点击每日一词，有句名言，智库早报
-        print('进入每日一词')
-        self.driver.find_elements_by_id('com.mbalib.android.wiki:id/ivImge')[0].click()
-        back.ivBack(self)
-        print('进入有句名言')
-        self.driver.find_elements_by_id('com.mbalib.android.wiki:id/ivImge')[1].click()
-        back.ivBack(self)
-        print('进入智库早报')
-        self.driver.find_elements_by_id('com.mbalib.android.wiki:id/ivImge')[2].click()
-        back.ivBack(self)
-        print("进入搜索广告位")
-        self.driver.find_elements_by_id("com.mbalib.android.wiki:id/image")[1].click()
-        back.ivBack(self)
-        #切换到课堂
-        print("切换到课堂搜索页")
-        self.driver.find_element_by_name('课堂').click()
-        #判断是否有广告
-        print("判断课堂搜索页是否有广告")
-        IvImageAd=isElement.find_Element(self,'id','IvImageAd')
-        if IvImageAd:
-            print("存在课堂搜索页广告")
-            self.driver.find_element_by_id('IvImageAd').click()
-            sleep(5)
-            back.ivBack(self)
-        else:
-            print("不存在课堂搜索页广告")
 
-        #切换到资讯搜索页
-        print("切换到资讯搜索页")
-        self.driver.find_element_by_name('资讯').click()
-        IvImageAd = isElement.find_Element(self, 'id', 'IvImageAd')
-        if IvImageAd:
-            print("存在资讯搜索页广告")
-            self.driver.find_element_by_id('IvImageAd').click()
-            sleep(5)
-            back.ivBack(self)
-        else:
-            print("不存在资讯搜索页广告")
-        sleep(5)
 
     #大咖开通页背景广告位
     def test_wiki_audio_vip(self):
         print("大咖开通页背景广告位")
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
         Ad.test_is_ad(self)
+        screen = swipe.get_size(self)
+        self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
         #进入大咖首页
         print("点击首页的大咖讲百科进入大咖首页")
         self.driver.find_elements_by_id("com.mbalib.android.wiki:id/ivSection")[0].click()
@@ -247,7 +126,7 @@ class Ad(unittest.TestCase):
     def test_dailyword_ad(self):
         print("每日一词广告")
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
         Ad.test_is_ad(self)
         print("进入每日一词")
@@ -269,7 +148,7 @@ class Ad(unittest.TestCase):
     def test_afamous_ad(self):
         print("有句名言广告")
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
         Ad.test_is_ad(self)
         print("进入有句名言")
@@ -290,7 +169,7 @@ class Ad(unittest.TestCase):
     def test_ketang_ad(self):
         print("课堂首页广告")
         # 判断是否有闪屏广告
-        Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
         Ad.test_is_ad(self)
         #切换到课堂

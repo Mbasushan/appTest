@@ -4,11 +4,12 @@ import unittest
 from time import sleep
 from selenium import webdriver
 from appium import webdriver
-import testcase.advertisement as AdTest
+import testcase.advertisements.advertisement as Ads
+import testcase.advertisements.splashAd as splashAd
 import tool.isElement as isElement
-import testcase.isLogin as Login
-import testcase.isVip as IsVip
 import tool.back as back
+import testcase.base.isVip as Isvip
+
 class Vip(unittest.TestCase):
 
     def setUp(self):
@@ -29,9 +30,9 @@ class Vip(unittest.TestCase):
     #从首页的【今日推荐】的【大咖讲百科】进入大咖首页
     def test_vipAduio01(self):
         # 判断是否有闪屏广告
-        AdTest.Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
-        AdTest.Ad.test_is_ad(self)
+        Ads.Ad.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【大咖讲百科】进入大咖首页")
         self.driver.find_elements_by_id('ivSection')[0].click()
@@ -40,9 +41,9 @@ class Vip(unittest.TestCase):
     #从首页的【今日推荐】的【专区】进入大咖首页
     def test_vipAduioMore(self):
         # 判断是否有闪屏广告
-        AdTest.Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
-        AdTest.Ad.test_is_ad(self)
+        Ads.Ad.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【专区】进入大咖首页")
         self.driver.find_elements_by_id('tvMore')[0].click()
@@ -51,13 +52,13 @@ class Vip(unittest.TestCase):
     #点击首页的【今日推荐】的音频进入大咖播放页
     def test_vipAduioPlay(self):
         # 判断是否有闪屏广告
-        AdTest.Ad.test_ad(self)
+        splashAd.SplashAd.test_ad(self)
         # 判断是否有首页广告
-        AdTest.Ad.test_is_ad(self)
+        Ads.Ad.test_is_ad(self)
         sleep(5)
         print("点击首页的【今日推荐】的音频进入大咖播放页")
         #用户是否为VIP用户
-        isVip=IsVip.isVip(self)
+        isVip= Isvip.isVip(self)
         back.ivBack(self)
         sleep(5)
         # 点击的是否为试听音频

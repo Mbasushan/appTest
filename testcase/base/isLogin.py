@@ -3,7 +3,7 @@
 from time import sleep
 from selenium import webdriver
 from appium import webdriver
-import testcase.advertisement as AdTest
+import testcase.advertisements as AdTest
 import tool.isElement as isElement
 
 def isLogin(self):

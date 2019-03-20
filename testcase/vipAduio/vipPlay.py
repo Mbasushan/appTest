@@ -4,8 +4,8 @@ import unittest
 from time import sleep
 from selenium import webdriver
 from appium import webdriver
-import testcase.vipAduio as vipAduio
-import testcase.isVip as isVip
+import testcase.vipAduio.vipAduio as vipAduio
+
 
 class VipPlay(unittest.TestCase):
 
