@@ -3,7 +3,8 @@
 from time import sleep
 from selenium import webdriver
 from appium import webdriver
-import testcase.advertisements as AdTest
+import testcase.advertisements.advertisement as AdTest
+import testcase.advertisements.splashAd as splashAd
 import tool.isElement as isElement
 import tool.swipe as swipe
 
@@ -11,7 +12,7 @@ import tool.swipe as swipe
 def isVip(self):
     print("是否为大咖vip")
     # 判断是否有闪屏广告
-    AdTest.Ad.test_ad(self)
+    splashAd.SplashAd.test_ad(self)
     # 判断是否有首页广告
     AdTest.Ad.test_is_ad(self)
     sleep(5)

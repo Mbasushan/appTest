@@ -9,6 +9,7 @@ import testcase.advertisements.splashAd as splashAd
 import tool.isElement as isElement
 import tool.back as back
 import testcase.base.isVip as Isvip
+import tool.swipe as swipe
 
 class Vip(unittest.TestCase):
 
@@ -35,6 +36,8 @@ class Vip(unittest.TestCase):
         Ads.Ad.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【大咖讲百科】进入大咖首页")
+        screen = swipe.get_size(self)
+        self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
         self.driver.find_elements_by_id('ivSection')[0].click()
         sleep(5)
 
@@ -46,6 +49,8 @@ class Vip(unittest.TestCase):
         Ads.Ad.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【专区】进入大咖首页")
+        screen = swipe.get_size(self)
+        self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
         self.driver.find_elements_by_id('tvMore')[0].click()
         sleep(5)
 
@@ -97,9 +102,15 @@ class Vip(unittest.TestCase):
                 print("该音频是试听音频")
                 aduio[0].find_element_by_id('tv_title').click()
                 sleep(5)
-    #大咖讲百科首页
+
+    #app首页【大咖讲百科】入口
     def test_vip_homePage(self):
-        print("大咖讲百科首页")
+        print("app首页【大咖讲百科】入口")
+        # 判断是否有闪屏广告
+        splashAd.SplashAd.test_ad(self)
+        # 判断是否有首页广告
+        Ads.Ad.test_is_ad(self)
+        print("点击进入大咖讲百科")
         self.driver.find_element_by_id('home_tv_wiki').click()
         sleep(5)
 

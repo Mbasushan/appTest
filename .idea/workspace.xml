@@ -1,22 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="大咖播放页">
-      <change afterPath="$PROJECT_DIR$/testcase/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/layoutIvBg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/praises.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/splashAd.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/base/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/vipAduio/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/app.iml" afterDir="false" />
+    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="优化代码">
+      <change afterPath="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisement.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/isLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isLogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/isVip.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isVip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/vipAduio.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/vipPlay.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/base/isVip.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isVip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,11 +18,12 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_dailyword_ad.coverage" NAME="Unittests for advertisement.Ad.test_dailyword_ad Coverage Results" MODIFIED="1551768864054" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vipAduioMore.coverage" NAME="Unittests for vipAduio.Vip.test_vipAduioMore Coverage Results" MODIFIED="1552034729567" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vipAduioPlay.coverage" NAME="Unittests for vipAduio.Vip.test_vipAduioPlay Coverage Results" MODIFIED="1553063304138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vipAduioMore.coverage" NAME="Unittests for vipAduio.Vip.test_vipAduioMore Coverage Results" MODIFIED="1553237080529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/vipAduio" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_order_Order_test_order.coverage" NAME="Unittests for order.Order.test_order Coverage Results" MODIFIED="1551178566174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_afamous_ad.coverage" NAME="Unittests for advertisement.Ad.test_afamous_ad Coverage Results" MODIFIED="1551769126798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$run.coverage" NAME="run Coverage Results" MODIFIED="1553079181284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_afamous_ad.coverage" NAME="Unittests for advertisement.Ad.test_afamous_ad Coverage Results" MODIFIED="1553160860586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$run.coverage" NAME="run Coverage Results" MODIFIED="1553238390471" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_searchAd_SearchAd.coverage" NAME="Unittests for searchAd.SearchAd Coverage Results" MODIFIED="1553163535295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_layoutIvBg_LayoutIvBg_test_aa_layout_iv_bg.coverage" NAME="Unittests for layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg Coverage Results" MODIFIED="1553072024477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip.coverage" NAME="Unittests for vipAduio.Vip Coverage Results" MODIFIED="1552017782116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_search_ad.coverage" NAME="Unittests for advertisement.Ad.test_search_ad Coverage Results" MODIFIED="1551692459091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -40,6 +33,7 @@
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_ad.coverage" NAME="Unittests for advertisement.Ad.test_ad Coverage Results" MODIFIED="1553071605025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_splash_tv_skip.coverage" NAME="Unittests for advertisement.Ad.test_splash_tv_skip Coverage Results" MODIFIED="1553073934313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$1.coverage" NAME="1 Coverage Results" MODIFIED="1549009407157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_searchAd_SearchAd_test_search_ad.coverage" NAME="Unittests for searchAd.SearchAd.test_search_ad Coverage Results" MODIFIED="1553163417850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
     <SUITE FILE_PATH="coverage/app$isVip.coverage" NAME="isVip Coverage Results" MODIFIED="1552035046607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_iv_home.coverage" NAME="Unittests for advertisement.Ad.test_iv_home Coverage Results" MODIFIED="1551684903030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$search.coverage" NAME="search Coverage Results" MODIFIED="1548668089513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -50,6 +44,8 @@
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_vip_ad.coverage" NAME="Unittests for advertisement.Ad.test_vip_ad Coverage Results" MODIFIED="1551693343547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$praise.coverage" NAME="praise Coverage Results" MODIFIED="1553074850632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_banner.coverage" NAME="Unittests for advertisement.Ad.test_banner Coverage Results" MODIFIED="1551684107788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_home_slideshow.coverage" NAME="Unittests for advertisement.Ad.test_home_slideshow Coverage Results" MODIFIED="1553238266011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vip_homePage.coverage" NAME="Unittests for vipAduio.Vip.test_vip_homePage Coverage Results" MODIFIED="1553241647332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/vipAduio" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_praises_Praise_test_complaints.coverage" NAME="Unittests for praises.Praise.test_complaints Coverage Results" MODIFIED="1553074934886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_aa_layout_iv_bg.coverage" NAME="Unittests for advertisement.Ad.test_aa_layout_iv_bg Coverage Results" MODIFIED="1553070754528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_wiki_audio_vip.coverage" NAME="Unittests for advertisement.Ad.test_wiki_audio_vip Coverage Results" MODIFIED="1553071941862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
@@ -59,21 +55,9 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
-              <folding>
-                <element signature="e#47#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/base/isLogin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="350">
               <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="e#46#68#0" expanded="true" />
@@ -85,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+            <state relative-caret-position="359">
+              <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -97,8 +81,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+            <state relative-caret-position="329">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -109,65 +93,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcase/advertisements/advertisement.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/searchAd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/splashAd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="56" column="15" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="15" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/base/isVip.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
-              <folding>
-                <element signature="e#46#68#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/layoutIvBg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/praises.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+            <state relative-caret-position="175">
+              <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -187,6 +114,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>findItem</find>
+      <find>test_afamous_ad</find>
+      <find>test_home_slideshow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -224,9 +153,11 @@
         <option value="$PROJECT_DIR$/testcase/advertisement/praises.py" />
         <option value="$PROJECT_DIR$/testcase/advertisement/advertisement.py" />
         <option value="$PROJECT_DIR$/testcase/advertisement/splashAd.py" />
-        <option value="$PROJECT_DIR$/testcase/advertisements/searchAd.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/splashAd.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/advertisement.py" />
+        <option value="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" />
+        <option value="$PROJECT_DIR$/testcase/advertisements/searchAd.py" />
+        <option value="$PROJECT_DIR$/testcase/base/isVip.py" />
         <option value="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" />
         <option value="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" />
       </list>
@@ -270,11 +201,6 @@
             <path>
               <item name="app" type="b2602c69:ProjectViewProjectNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="apk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -295,11 +221,6 @@
               <item name="testcase" type="462c0819:PsiDirectoryNode" />
               <item name="vipAduio" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -309,7 +230,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -338,29 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.run">
-    <configuration name="praise" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="app" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/advertisement" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\app\testcase\advertisement\praises.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Unittests for vipAduio.Vip.test_vip_homePage">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -383,7 +282,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testcase.advertisements.advertisement.Ad" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for advertisement.Ad.test_home_slideshow" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -394,26 +293,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testcase.advertisements.advertisement.Ad&quot;" />
+      <option name="_new_target" value="&quot;advertisement.Ad.test_home_slideshow&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testcase.advertisements.advertisement.Ad.test_aa_layout_iv_bg" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="app" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testcase.advertisements.advertisement.Ad.test_aa_layout_iv_bg&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for testcase.advertisements.layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for searchAd.SearchAd" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -424,32 +308,47 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testcase.advertisements.layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg&quot;" />
+      <option name="_new_target" value="&quot;searchAd.SearchAd&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for testcase.advertisements.praises" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for vipAduio.Vip.test_vipAduioMore" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/advertisements" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/vipAduio" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;testcase.advertisements.praises&quot;" />
+      <option name="_new_target" value="&quot;vipAduio.Vip.test_vipAduioMore&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="app" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/vipAduio" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;vipAduio.Vip.test_vip_homePage&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests for vipAduio.Vip.test_vip_homePage" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.Unittests for testcase.advertisements.praises" />
-        <item itemvalue="Python.praise" />
-        <item itemvalue="Python tests.Unittests for testcase.advertisements.advertisement.Ad" />
-        <item itemvalue="Python tests.Unittests for testcase.advertisements.layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg" />
+        <item itemvalue="Python tests.Unittests for advertisement.Ad.test_home_slideshow" />
+        <item itemvalue="Python tests.Unittests for vipAduio.Vip.test_vipAduioMore" />
+        <item itemvalue="Python tests.Unittests for searchAd.SearchAd" />
       </list>
     </recent_temporary>
   </component>
@@ -486,7 +385,9 @@
       <workItem from="1552965817182" duration="668000" />
       <workItem from="1552966574488" duration="693000" />
       <workItem from="1552988661014" duration="1059000" />
-      <workItem from="1553047343871" duration="15099000" />
+      <workItem from="1553047343871" duration="16076000" />
+      <workItem from="1553152359125" duration="6945000" />
+      <workItem from="1553225693436" duration="5342000" />
     </task>
     <task id="LOCAL-00001" summary="提交版本">
       <created>1551865541161</created>
@@ -530,43 +431,50 @@
       <option name="project" value="LOCAL" />
       <updated>1553049115199</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="优化代码">
+      <created>1553080420505</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1553080420506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_layoutIvBg_py - 2019.03.20 at 16h 40m 56s.xml">
-      <configuration name="Unittests in layoutIvBg.py" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vipAduioMore - 2019.03.21 at 18h 22m 58s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vipAduioMore" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_layoutIvBg_py - 2019.03.20 at 16h 42m 45s.xml">
-      <configuration name="Unittests in layoutIvBg.py" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vip_homePage - 2019.03.21 at 18h 23m 00s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_ketang_ad - 2019.03.20 at 16h 45m 53s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_ketang_ad" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vipAduioMore - 2019.03.21 at 18h 24m 22s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vipAduioMore" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_ad - 2019.03.20 at 16h 46m 54s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_ad" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vipAduioMore - 2019.03.22 at 14h 38m 22s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vipAduioMore" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_wiki_audio_vip - 2019.03.20 at 16h 47m 54s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_wiki_audio_vip" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vipAduioMore - 2019.03.22 at 14h 45m 47s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vipAduioMore" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_wiki_audio_vip - 2019.03.20 at 16h 49m 33s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_wiki_audio_vip" configurationId="tests" />
+    <history-entry file="Unittests_for_advertisement_Ad_test_home_slideshow - 2019.03.22 at 15h 05m 23s.xml">
+      <configuration name="Unittests for advertisement.Ad.test_home_slideshow" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_wiki_audio_vip - 2019.03.20 at 16h 53m 22s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_wiki_audio_vip" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vip_homePage - 2019.03.22 at 15h 56m 07s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_layoutIvBg_LayoutIvBg_test_aa_layout_iv_bg - 2019.03.20 at 16h 54m 00s.xml">
-      <configuration name="Unittests for layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vip_homePage - 2019.03.22 at 15h 57m 51s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_advertisement_Ad_test_splash_tv_skip - 2019.03.20 at 17h 26m 12s.xml">
-      <configuration name="Unittests for advertisement.Ad.test_splash_tv_skip" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vip_homePage - 2019.03.22 at 15h 59m 14s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_praises_Praise_test_complaints - 2019.03.20 at 17h 42m 42s.xml">
-      <configuration name="Unittests for praises.Praise.test_complaints" configurationId="tests" />
+    <history-entry file="Unittests_for_vipAduio_Vip_test_vip_homePage - 2019.03.22 at 16h 01m 38s.xml">
+      <configuration name="Unittests for vipAduio.Vip.test_vip_homePage" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168862000" />
+    <option name="totallyTimeSpent" value="182126000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -578,23 +486,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15351813" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32850778" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8502132" visible="true" weight="0.23385301" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6913646" weight="0.39933258" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84648186" visible="true" weight="0.32405347" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6902985" weight="0.4532294" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.2224694" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49840087" weight="0.27282852" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.14978679" side_tool="true" visible="true" weight="0.23385301" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15351813" side_tool="true" visible="true" weight="0.32405347" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -624,7 +532,8 @@
     <MESSAGE value="提交版本" />
     <MESSAGE value="首页进入大咖页面" />
     <MESSAGE value="大咖播放页" />
-    <option name="LAST_COMMIT_MESSAGE" value="大咖播放页" />
+    <MESSAGE value="优化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_report/__init__.py" />
@@ -662,13 +571,6 @@
     <entry file="file://$PROJECT_DIR$/test_report/2019-03-04 11-16-02.html" />
     <entry file="file://$PROJECT_DIR$/testcase/my.py" />
     <entry file="file://$PROJECT_DIR$/testcase/order.py" />
-    <entry file="file://$PROJECT_DIR$/tool/back.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="55" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool/isElement.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="975">
@@ -679,26 +581,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/base/starApp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="12" selection-end-column="49" />
-          <folding>
-            <element signature="e#46#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/base/isLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="e#46#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/starApp.py" />
     <entry file="file://$PROJECT_DIR$/tool/setting.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -706,13 +589,6 @@
           <folding>
             <element signature="e#52#82#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/swipe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -745,28 +621,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="225">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
           <folding>
             <element signature="e#47#56#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/base/isVip.py">
+    <entry file="file://$PROJECT_DIR$/tool/swipe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="91" selection-start-line="22" selection-start-column="91" selection-end-line="22" selection-end-column="91" />
+        <state relative-caret-position="75">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/isLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
             <element signature="e#46#68#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tool/back.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/advertisements/searchAd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1575">
+          <caret line="71" column="54" lean-forward="true" selection-start-line="71" selection-start-column="54" selection-end-line="71" selection-end-column="54" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/advertisements/splashAd.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="56" column="15" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="15" />
+        <state relative-caret-position="1375">
+          <caret line="61" column="69" lean-forward="true" selection-start-line="61" selection-start-column="69" selection-end-line="61" selection-end-column="69" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/isVip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="39" column="19" lean-forward="true" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+          <folding>
+            <element signature="e#46#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/advertisements/afamousAd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="37" column="56" lean-forward="true" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
@@ -775,25 +695,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/advertisements/advertisement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="51" lean-forward="true" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        <state relative-caret-position="175">
+          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/advertisements/searchAd.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" selection-start-line="8" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="45" column="31" lean-forward="true" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
+        <state relative-caret-position="359">
+          <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
@@ -802,8 +715,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="38" column="64" lean-forward="true" selection-start-line="38" selection-start-column="64" selection-end-line="38" selection-end-column="64" />
+        <state relative-caret-position="329">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>

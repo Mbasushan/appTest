@@ -8,6 +8,7 @@ import tool.isElement as isElement
 import tool.back as back
 import testcase.advertisements.advertisement as Ads
 import testcase.advertisements.splashAd as splashAd
+import tool.swipe as swipe
 class SearchAd(unittest.TestCase):
 
     def setUp(self):
