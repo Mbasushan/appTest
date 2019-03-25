@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="优化代码">
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/base/isVip.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isVip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" afterDir="false" />
-    </list>
+    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="优化代码" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,23 +58,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="454">
+              <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
               <folding>
                 <element signature="e#46#61#0" expanded="true" />
               </folding>
@@ -387,7 +367,7 @@
       <workItem from="1552988661014" duration="1059000" />
       <workItem from="1553047343871" duration="16076000" />
       <workItem from="1553152359125" duration="6945000" />
-      <workItem from="1553225693436" duration="5342000" />
+      <workItem from="1553225693436" duration="6749000" />
     </task>
     <task id="LOCAL-00001" summary="提交版本">
       <created>1551865541161</created>
@@ -438,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1553080420506</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="优化代码">
+      <created>1553242246240</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553242246241</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -474,7 +461,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182126000" />
+    <option name="totallyTimeSpent" value="183533000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -487,14 +474,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32850778" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.84648186" visible="true" weight="0.32405347" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.84648186" weight="0.26391983" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6902985" weight="0.4532294" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -502,7 +488,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49840087" weight="0.27282852" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15351813" side_tool="true" visible="true" weight="0.32405347" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.15351813" side_tool="true" visible="true" weight="0.26391983" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32925472" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -703,20 +689,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
+    <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="113" column="62" lean-forward="true" selection-start-line="113" selection-start-column="62" selection-end-line="113" selection-end-column="62" />
+        <state relative-caret-position="404">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py">
+    <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="454">
+          <caret line="115" lean-forward="true" selection-start-line="115" selection-end-line="115" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>

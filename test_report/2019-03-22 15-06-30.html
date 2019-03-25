@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>测试报告</title>
+    <meta name="generator" content="HTMLTestRunner 0.9.1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <link href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/echarts/3.8.5/echarts.common.min.js"></script>
+    <!-- <script type="text/javascript" src="js/echarts.common.min.js"></script> -->
+    
+    
+<style type="text/css" media="screen">
+    body        { font-family: Microsoft YaHei,Consolas,arial,sans-serif; font-size: 80%; }
+    table       { font-size: 100%; }
+    pre         { white-space: pre-wrap;word-wrap: break-word; }
+
+    /* -- heading ---------------------------------------------------------------------- */
+    h1 {
+        font-size: 16pt;
+        color: gray;
+    }
+    .heading {
+        margin-top: 0ex;
+        margin-bottom: 1ex;
+    }
+
+    .heading .attribute {
+        margin-top: 1ex;
+        margin-bottom: 0;
+    }
+
+    .heading .description {
+        margin-top: 2ex;
+        margin-bottom: 3ex;
+    }
+
+    /* -- css div popup ------------------------------------------------------------------------ */
+    a.popup_link {
+    }
+
+    a.popup_link:hover {
+        color: red;
+    }
+
+    .popup_window {
+        display: none;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        /*border: solid #627173 1px; */
+        padding: 10px;
+        /*background-color: #E6E6D6; */
+        font-family: "Lucida Console", "Courier New", Courier, monospace;
+        text-align: left;
+        font-size: 8pt;
+        /* width: 500px;*/
+    }
+
+    }
+    /* -- report ------------------------------------------------------------------------ */
+    #show_detail_line {
+        margin-top: 3ex;
+        margin-bottom: 1ex;
+    }
+    #result_table {
+        width: 99%;
+    }
+    #header_row {
+        font-weight: bold;
+        color: #303641;
+        background-color: #ebebeb;
+    }
+    #total_row  { font-weight: bold; }
+    .passClass  { background-color: #bdedbc; }
+    .failClass  { background-color: #ffefa4; }
+    .errorClass { background-color: #ffc9c9; }
+    .passCase   { color: #6c6; }
+    .failCase   { color: #FF6600; font-weight: bold; }
+    .errorCase  { color: #c00; font-weight: bold; }
+    .hiddenRow  { display: none; }
+    .testcase   { margin-left: 2em; }
+
+
+    /* -- ending ---------------------------------------------------------------------- */
+    #ending {
+    }
+
+    #div_base {
+                position:absolute;
+                top:0%;
+                left:5%;
+                right:5%;
+                width: auto;
+                height: auto;
+                margin: -15px 0 0 0;
+    }
+</style>
+
+    
+</head>
+<body>
+    <script language="javascript" type="text/javascript"><!--
+    output_list = Array();
+
+    /* level - 0:Summary; 1:Failed; 2:All */
+    function showCase(level) {
+        trs = document.getElementsByTagName("tr");
+        for (var i = 0; i < trs.length; i++) {
+            tr = trs[i];
+            id = tr.id;
+            if (id.substr(0,2) == 'ft') {
+                if (level < 1) {
+                    tr.className = 'hiddenRow';
+                }
+                else {
+                    tr.className = '';
+                }
+            }
+            if (id.substr(0,2) == 'pt') {
+                if (level > 1) {
+                    tr.className = '';
+                }
+                else {
+                    tr.className = 'hiddenRow';
+                }
+            }
+        }
+    }
+
+
+    function showClassDetail(cid, count) {
+        var id_list = Array(count);
+        var toHide = 1;
+        for (var i = 0; i < count; i++) {
+            tid0 = 't' + cid.substr(1) + '.' + (i+1);
+            tid = 'f' + tid0;
+            tr = document.getElementById(tid);
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+            id_list[i] = tid;
+            if (tr.className) {
+                toHide = 0;
+            }
+        }
+        for (var i = 0; i < count; i++) {
+            tid = id_list[i];
+            if (toHide) {
+                document.getElementById('div_'+tid).style.display = 'none'
+                document.getElementById(tid).className = 'hiddenRow';
+            }
+            else {
+                document.getElementById(tid).className = '';
+            }
+        }
+    }
+
+
+    function showTestDetail(div_id){
+        var details_div = document.getElementById(div_id)
+        var displayState = details_div.style.display
+        // alert(displayState)
+        if (displayState != 'block' ) {
+            displayState = 'block'
+            details_div.style.display = 'block'
+        }
+        else {
+            details_div.style.display = 'none'
+        }
+    }
+
+
+    function html_escape(s) {
+        s = s.replace(/&/g,'&amp;');
+        s = s.replace(/</g,'&lt;');
+        s = s.replace(/>/g,'&gt;');
+        return s;
+    }
+
+    /* obsoleted by detail in <div>
+    function showOutput(id, name) {
+        var w = window.open("", //url
+                        name,
+                        "resizable,scrollbars,status,width=800,height=450");
+        d = w.document;
+        d.write("<pre>");
+        d.write(html_escape(output_list[id]));
+        d.write("\n");
+        d.write("<a href='javascript:window.close()'>close</a>\n");
+        d.write("</pre>\n");
+        d.close();
+    }
+    */
+    --></script>
+
+    <div id="div_base">
+        
+    <div class='page-header'>
+        <h1>测试报告</h1>
+    <p class='attribute'><strong>开始时间:</strong> 2019-03-22 15:06:30</p>
+<p class='attribute'><strong>运行时长:</strong> 0:15:55.386707</p>
+<p class='attribute'><strong>状态:</strong> 通过 21 错误 1</p>
+
+    </div>
+    <div style="float: left;width:50%;"><p class='description'>本测试报告内容为APP搜索测试</p></div>
+    <div id="chart" style="width:50%;height:400px;float:left;"></div>
+
+        
+    <div class="btn-group btn-group-sm">
+        <button class="btn btn-default" onclick='javascript:showCase(0)'>总结</button>
+        <button class="btn btn-default" onclick='javascript:showCase(1)'>失败</button>
+        <button class="btn btn-default" onclick='javascript:showCase(2)'>全部</button>
+    </div>
+    <p></p>
+    <table id='result_table' class="table table-bordered">
+        <colgroup>
+            <col align='left' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+            <col align='right' />
+        </colgroup>
+        <tr id='header_row'>
+            <td>测试套件/测试用例</td>
+            <td>总数</td>
+            <td>通过</td>
+            <td>失败</td>
+            <td>错误</td>
+            <td>查看</td>
+        </tr>
+        
+    <tr class='passClass'>
+        <td>advertisements.advertisement.Ad</td>
+        <td>7</td>
+        <td>7</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c1',7)">详情</a></td>
+    </tr>
+
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_ask_tv_cancel</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        通过</a>
+
+    <div id='div_pt1.1' class="popup_window">
+        <pre>pt1.1: 稍后安装用例
+执行--------find_Element-------方法
+未找到%type--%value id ask_tv_title
+不存在有更新版本弹窗
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_ask_tv_confirm</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2')" >
+        通过</a>
+
+    <div id='div_pt1.2' class="popup_window">
+        <pre>pt1.2: 立即安装用例
+执行--------find_Element-------方法
+未找到%type--%value id ask_tv_title
+不存在有更新版本弹窗
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_home_banner</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        通过</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <pre>pt1.3: 首页横幅广告
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7a607c20-20bf-4837-b3ff-7df2ffe387ab", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="7a607c20-20bf-4837-b3ff-7df2ffe387ab", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7a607c20-20bf-4837-b3ff-7df2ffe387ab", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+执行--------find_Element-------方法
+存在横幅广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7a607c20-20bf-4837-b3ff-7df2ffe387ab", element="11")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.4' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_home_slideshow</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.4')" >
+        通过</a>
+
+    <div id='div_pt1.4' class="popup_window">
+        <pre>pt1.4: banner图
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1df38f87-e131-4f2e-8b23-c40143f24167", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="1df38f87-e131-4f2e-8b23-c40143f24167", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1df38f87-e131-4f2e-8b23-c40143f24167", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1df38f87-e131-4f2e-8b23-c40143f24167", element="10")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.5' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_is_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.5')" >
+        通过</a>
+
+    <div id='div_pt1.5' class="popup_window">
+        <pre>pt1.5: 执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.6' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_ketang_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.6')" >
+        通过</a>
+
+    <div id='div_pt1.6' class="popup_window">
+        <pre>pt1.6: 课堂首页广告
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="34112d05-7635-48b9-9d77-90291ddd313c", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="34112d05-7635-48b9-9d77-90291ddd313c", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="34112d05-7635-48b9-9d77-90291ddd313c", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+执行--------find_Element-------方法
+未找到%type--%value id llparent
+课堂首页无广告
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.7' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_wiki_audio_vip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.7')" >
+        通过</a>
+
+    <div id='div_pt1.7' class="popup_window">
+        <pre>pt1.7: 大咖开通页背景广告位
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1fd74062-d9a9-460e-a43b-9e6dae781417", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="1fd74062-d9a9-460e-a43b-9e6dae781417", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1fd74062-d9a9-460e-a43b-9e6dae781417", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+点击首页的大咖讲百科进入大咖首页
+执行--------find_Element-------方法
+存在大咖开通页背景广告位
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1fd74062-d9a9-460e-a43b-9e6dae781417", element="14")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>advertisements.afamousAd.AfamousAd</td>
+        <td>2</td>
+        <td>2</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c2',2)">详情</a></td>
+    </tr>
+
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_afamous_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        通过</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <pre>pt2.1: 有句名言广告
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7620d392-ce4c-45fb-97bb-971aac8cb37c", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="7620d392-ce4c-45fb-97bb-971aac8cb37c", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7620d392-ce4c-45fb-97bb-971aac8cb37c", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+进入有句名言
+执行--------find_Element-------方法
+有句名言有广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7620d392-ce4c-45fb-97bb-971aac8cb37c", element="12")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_dailyword_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        通过</a>
+
+    <div id='div_pt2.2' class="popup_window">
+        <pre>pt2.2: 每日一词广告
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a8891448-050a-4ddc-a09a-904f1ff457e9", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="a8891448-050a-4ddc-a09a-904f1ff457e9", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a8891448-050a-4ddc-a09a-904f1ff457e9", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+进入每日一词
+执行--------find_Element-------方法
+每日一词有广告 &lt;appium.webdriver.webelement.WebElement (session="a8891448-050a-4ddc-a09a-904f1ff457e9", element="10")&gt;
+每日一词有广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a8891448-050a-4ddc-a09a-904f1ff457e9", element="12")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>advertisements.layoutIvBg.LayoutIvBg</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c3',1)">详情</a></td>
+    </tr>
+
+<tr id='pt3.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_aa_layout_iv_bg</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt3.1')" >
+        通过</a>
+
+    <div id='div_pt3.1' class="popup_window">
+        <pre>pt3.1: 引导图
+执行--------find_Element-------方法
+未找到%type--%value id layout_iv_bg
+无引导图
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>advertisements.praises.Praises</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c4',3)">详情</a></td>
+    </tr>
+
+<tr id='pt4.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_complaints</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.1')" >
+        通过</a>
+
+    <div id='div_pt4.1' class="popup_window">
+        <pre>pt4.1: 是否有好评弹窗
+执行--------find_Element-------方法
+未找到%type--%value id tvPraise
+不存在好评弹窗
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt4.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_praise</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.2')" >
+        通过</a>
+
+    <div id='div_pt4.2' class="popup_window">
+        <pre>pt4.2: 是否有好评弹窗
+执行--------find_Element-------方法
+未找到%type--%value id tvPraise
+不存在好评弹窗
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt4.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_tvcnacle</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt4.3')" >
+        通过</a>
+
+    <div id='div_pt4.3' class="popup_window">
+        <pre>pt4.3: 是否有好评弹窗
+执行--------find_Element-------方法
+未找到%type--%value id tvPraise
+不存在好评弹窗
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>advertisements.searchAd.SearchAd</td>
+        <td>1</td>
+        <td>1</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c5',1)">详情</a></td>
+    </tr>
+
+<tr id='pt5.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_search_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt5.1')" >
+        通过</a>
+
+    <div id='div_pt5.1' class="popup_window">
+        <pre>pt5.1: 搜索首页广告
+执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+执行--------find_Element-------方法
+未找到%type--%value id toolbar_iv_back
+判断返回的id： False
+执行--------find_Element-------方法
+返回到首页
+进入每日一词
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="17")&gt;
+进入有句名言
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="22")&gt;
+进入智库早报
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="27")&gt;
+进入搜索广告位
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="31")&gt;
+切换到课堂搜索页
+判断课堂搜索页是否有广告
+执行--------find_Element-------方法
+存在课堂搜索页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="36")&gt;
+切换到资讯搜索页
+执行--------find_Element-------方法
+存在资讯搜索页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="a935b1f5-e651-4ead-b4c4-ee9e7609f6c0", element="41")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>advertisements.splashAd.SplashAd</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c6',3)">详情</a></td>
+    </tr>
+
+<tr id='pt6.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_ad</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.1')" >
+        通过</a>
+
+    <div id='div_pt6.1' class="popup_window">
+        <pre>pt6.1: 执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="78221656-356a-4c4a-9c1c-276179c9a147", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="78221656-356a-4c4a-9c1c-276179c9a147", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="78221656-356a-4c4a-9c1c-276179c9a147", element="7")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt6.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_noSkip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.2')" >
+        通过</a>
+
+    <div id='div_pt6.2' class="popup_window">
+        <pre>pt6.2: 不点击跳过闪屏广告，倒计时结束
+执行--------find_Element-------方法
+有闪屏广告不做操作等倒计时
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="1334a408-bdaf-46da-a88b-52653c5f5188", element="2")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="1334a408-bdaf-46da-a88b-52653c5f5188", element="4")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt6.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_splash_tv_skip</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt6.3')" >
+        通过</a>
+
+    <div id='div_pt6.3' class="popup_window">
+        <pre>pt6.3: 判断是否有闪屏广告
+执行--------find_Element-------方法
+有闪屏广告点击【跳过】
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="7e9af871-c553-4ecb-b940-d3302544e449", element="3")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7e9af871-c553-4ecb-b940-d3302544e449", element="5")&gt;
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='passClass'>
+        <td>vipAduio.vipAduio.Vip</td>
+        <td>3</td>
+        <td>3</td>
+        <td>0</td>
+        <td>0</td>
+        <td><a href="javascript:showClassDetail('c7',3)">详情</a></td>
+    </tr>
+
+<tr id='pt7.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_vipAduio01</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.1')" >
+        通过</a>
+
+    <div id='div_pt7.1' class="popup_window">
+        <pre>pt7.1: 执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7ec0c6cc-81a2-42fb-a2de-5667c95200eb", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="7ec0c6cc-81a2-42fb-a2de-5667c95200eb", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="7ec0c6cc-81a2-42fb-a2de-5667c95200eb", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+从首页的【今日推荐】的【大咖讲百科】进入大咖首页
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_vipAduioMore</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.2')" >
+        通过</a>
+
+    <div id='div_pt7.2' class="popup_window">
+        <pre>pt7.2: 执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="586cb454-8d03-45bc-bd9d-fc265da5fd54", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="586cb454-8d03-45bc-bd9d-fc265da5fd54", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="586cb454-8d03-45bc-bd9d-fc265da5fd54", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+从首页的【今日推荐】的【专区】进入大咖首页
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt7.3' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_vipAduioPlay</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt7.3')" >
+        通过</a>
+
+    <div id='div_pt7.3' class="popup_window">
+        <pre>pt7.3: 执行--------find_Element-------方法
+点击闪屏广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="3")&gt;
+执行--------find_Element-------方法
+判断是否有首页广告 &lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="5")&gt;
+有首页广告
+执行--------find_Element-------方法
+判断返回的id： &lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="7")&gt;
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+点击首页的【今日推荐】的音频进入大咖播放页
+是否为大咖vip
+执行--------find_Element-------方法
+未找到%type--%value id splash_iv_image
+test_ad无闪屏广告
+执行--------find_Element-------方法
+未找到%type--%value id image
+判断是否有首页广告 False
+无首页广告
+执行--------find_Element-------方法
+向上滑动
+从首页的【今日推荐】的【大咖讲百科】进入大咖首页
+tvdesc的值： 专享大咖讲解
+该用户不是VIP用户
+执行--------find_Element-------方法
+未找到%type--%value id toolbar_iv_back
+判断返回的id： False
+执行--------find_Element-------方法
+返回到首页
+audio [&lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="16")&gt;, &lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="17")&gt;, &lt;appium.webdriver.webelement.WebElement (session="35762c73-4204-42e6-a7f5-b1c83ba09373", element="18")&gt;]
+该音频是非试听音频
+执行--------find_Element-------方法
+有触发弹窗
+执行--------find_Element-------方法
+进入开通vip页面
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+    <tr class='errorClass'>
+        <td>vipAduio.vipPlay.VipPlay</td>
+        <td>2</td>
+        <td>1</td>
+        <td>0</td>
+        <td>1</td>
+        <td><a href="javascript:showClassDetail('c8',2)">详情</a></td>
+    </tr>
+
+<tr id='pt8.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_play</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt8.1')" >
+        通过</a>
+
+    <div id='div_pt8.1' class="popup_window">
+        <pre>pt8.1: 大咖音频播放页
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft8.2' class='none'>
+    <td class='errorCase'><div class='testcase'>test_vipPlay</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft8.2')" >
+        错误</a>
+
+    <div id='div_ft8.2' class="popup_window">
+        <pre>ft8.2: Traceback (most recent call last):
+  File "D:\app\testcase\vipAduio\vipPlay.py", line 24, in setUp
+    self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+  File "D:\app\venv\lib\site-packages\appium\webdriver\webdriver.py", line 129, in __init__
+    proxy
+  File "D:\app\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 157, in __init__
+    self.start_session(capabilities, browser_profile)
+  File "D:\app\venv\lib\site-packages\appium\webdriver\webdriver.py", line 204, in start_session
+    response = self.execute(RemoteCommand.NEW_SESSION, parameters)
+  File "D:\app\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "D:\app\venv\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: A new session could not be created. (Original error: com.mbalib.android.wiki/com.mbalib.android.modules.main.app.controller.SplashActivity never started. Current: com.mbalib.android.wiki/com.mbalib.android.modules.main.app.controller.MainActivity)
+
+</pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+        <tr id='total_row'>
+            <td>总计</td>
+            <td>22</td>
+            <td>21</td>
+            <td>0</td>
+            <td>1</td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+
+        <div id='ending'>&nbsp;</div>
+        
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('chart'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title : {
+                text: '测试执行情况',
+                x:'center'
+            },
+            tooltip : {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            color: ['#95b75d', 'grey', '#b64645'],
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: ['通过','失败','错误']
+            },
+            series : [
+                {
+                    name: '测试执行情况',
+                    type: 'pie',
+                    radius : '60%',
+                    center: ['50%', '60%'],
+                    data:[
+                        {value:21, name:'通过'},
+                        {value:0, name:'失败'},
+                        {value:1, name:'错误'}
+                    ],
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        myChart.setOption(option);
+    </script>
+    
+    </div>
+</body>
+</html>
