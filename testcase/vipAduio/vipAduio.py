@@ -31,9 +31,9 @@ class Vip(unittest.TestCase):
     #从首页的【今日推荐】的【大咖讲百科】进入大咖首页
     def test_vipAduio01(self):
         # 判断是否有闪屏广告
-        splashAd.SplashAd.test_ad(self)
+        splashAd.test_ad(self)
         # 判断是否有首页广告
-        Ads.Ad.test_is_ad(self)
+        Ads.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【大咖讲百科】进入大咖首页")
         screen = swipe.get_size(self)
@@ -44,9 +44,9 @@ class Vip(unittest.TestCase):
     #从首页的【今日推荐】的【专区】进入大咖首页
     def test_vipAduioMore(self):
         # 判断是否有闪屏广告
-        splashAd.SplashAd.test_ad(self)
+        splashAd.test_ad(self)
         # 判断是否有首页广告
-        Ads.Ad.test_is_ad(self)
+        Ads.test_is_ad(self)
         sleep(5)
         print("从首页的【今日推荐】的【专区】进入大咖首页")
         screen = swipe.get_size(self)
@@ -57,9 +57,9 @@ class Vip(unittest.TestCase):
     #点击首页的【今日推荐】的音频进入大咖播放页
     def test_vipAduioPlay(self):
         # 判断是否有闪屏广告
-        splashAd.SplashAd.test_ad(self)
+        splashAd.test_ad(self)
         # 判断是否有首页广告
-        Ads.Ad.test_is_ad(self)
+        Ads.test_is_ad(self)
         sleep(5)
         print("点击首页的【今日推荐】的音频进入大咖播放页")
         #用户是否为VIP用户
@@ -107,9 +107,9 @@ class Vip(unittest.TestCase):
     def test_vip_homePage(self):
         print("app首页【大咖讲百科】入口")
         # 判断是否有闪屏广告
-        splashAd.SplashAd.test_ad(self)
+        splashAd.test_ad(self)
         # 判断是否有首页广告
-        Ads.Ad.test_is_ad(self)
+        Ads.test_is_ad(self)
         print("点击进入大咖讲百科")
         self.driver.find_element_by_id('home_tv_wiki').click()
         sleep(5)

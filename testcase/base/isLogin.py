@@ -1,18 +1,15 @@
 #!/usr/bin/env python 
 # -*- coding:utf-8 -*-
-from time import sleep
-from selenium import webdriver
-from appium import webdriver
-import testcase.advertisements as AdTest
-import tool.isElement as isElement
+import testcase.advertisements.splashAd as splashAd
+import testcase.advertisements.advertisement as ads
 
 def isLogin(self):
     print("判断用户是否登录")
     # 判断是否有闪屏广告
-    AdTest.Ad.test_ad(self)
+    splashAd.test_ad(self)
     # 判断是否有首页广告
-    AdTest.Ad.test_is_ad(self)
-    # 切换到课堂
+    ads.test_is_ad(self)
+    # 切换到我的
     self.driver.find_element_by_name('我的').click()
     isLogin=self.driver.find_element_by_id('tvNickName').text
     if isLogin=='点击登录':

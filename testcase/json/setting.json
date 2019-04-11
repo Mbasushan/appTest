@@ -1,0 +1,7 @@
+{
+    "platformName": "Android",
+    "platformVersion": "6.0",
+    "deviceName": "DIG-TL10",
+    "appPackage": "com.mbalib.android.wiki",
+    "appActivity": "com.mbalib.android.modules.main.app.controller.SplashActivity"
+}

@@ -12,9 +12,9 @@ import tool.swipe as swipe
 def isVip(self):
     print("是否为大咖vip")
     # 判断是否有闪屏广告
-    splashAd.SplashAd.test_ad(self)
+    splashAd.test_ad(self)
     # 判断是否有首页广告
-    AdTest.Ad.test_is_ad(self)
+    AdTest.test_is_ad(self)
     sleep(5)
     #判断是否有首页横幅广告，有的话则往上滑动，显示出大咖讲百科内容
     hengfu = isElement.find_Element(self, 'id', 'iv_home_wiki')
