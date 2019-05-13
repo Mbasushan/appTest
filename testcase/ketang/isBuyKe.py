@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 #判断课程是否购买
 from time import sleep
+import tool.swipe as swipe
 
 def is_buy_ke(self,title):
     # 切换到我的
@@ -19,5 +20,6 @@ def is_buy_ke(self,title):
             print("报名成功")
             return True
         else:
-            print("报名失败")
-            return False
+           print("未找到")
+
+

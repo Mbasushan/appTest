@@ -1,30 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/testcase/advertisements/adRun.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/base/login.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/json/setting.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/ketang/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/ketang/apply.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testcase/ketang/isBuyKe.py" afterDir="false" />
+    <list default="true" id="661704c7-4b06-40c0-8971-74bbbd1126a7" name="Default Changelist" comment="测报报告生成">
+      <change afterPath="$PROJECT_DIR$/HTMLTestRunner/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/base/logOut.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/download/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/download/downLoadManager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/download/downloadKe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/download/downloadRun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/download/downloaded.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/ketang/allKe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/ketang/my_ketang.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/testcase/pay/__init__.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/testcase/pay/payType.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/connectServer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/loadConfigJson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tool/pageSourse.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcase/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/ConnectionType.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tool/getwebstate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTMLTestRunner.py0" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner.py0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTMLTestRunner.py_2" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner.py_2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTMLTestRunner_py3.py" beforeDir="false" afterPath="$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner_py3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run.py" beforeDir="false" afterPath="$PROJECT_DIR$/run.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_report/2019-03-22 15-06-30.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/advertisement.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/layoutIvBg.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/layoutIvBg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/praises.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/praises.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/searchAd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/advertisements/splashAd.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/splashAd.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/base/isLogin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isLogin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/base/isVip.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/base/isVip.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tool/setting.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/advertisements/adRun.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/advertisements/adRun.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcase/ketang/isBuyKe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcase/ketang/isBuyKe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/isElement.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/isElement.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tool/pageSourse.py" beforeDir="false" afterPath="$PROJECT_DIR$/tool/pageSourse.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,12 +40,31 @@
     <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vipAduioMore.coverage" NAME="Unittests for vipAduio.Vip.test_vipAduioMore Coverage Results" MODIFIED="1553237080529" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/vipAduio" />
     <SUITE FILE_PATH="coverage/app$login.coverage" NAME="login Coverage Results" MODIFIED="1554801716550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/base" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_apply_ApplayKe.coverage" NAME="Unittests for apply.ApplayKe Coverage Results" MODIFIED="1554891179337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_test_Test_test.coverage" NAME="Unittests for test.Test.test Coverage Results" MODIFIED="1557739091451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun.coverage" NAME="Unittests for downloadRun.DownLoadRun Coverage Results" MODIFIED="1555382173813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang/download" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_order_Order_test_order.coverage" NAME="Unittests for order.Order.test_order Coverage Results" MODIFIED="1551178566174" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_afamous_ad.coverage" NAME="Unittests for advertisement.Ad.test_afamous_ad Coverage Results" MODIFIED="1553160860586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
-    <SUITE FILE_PATH="coverage/app$run.coverage" NAME="run Coverage Results" MODIFIED="1554948923981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$run.coverage" NAME="run Coverage Results" MODIFIED="1557739215560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_searchAd_SearchAd.coverage" NAME="Unittests for searchAd.SearchAd Coverage Results" MODIFIED="1553163535295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_layoutIvBg_LayoutIvBg_test_aa_layout_iv_bg.coverage" NAME="Unittests for layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg Coverage Results" MODIFIED="1553072024477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_adRun_Ad_test_ask_tv_cancel.coverage" NAME="Unittests for adRun.Ad.test_ask_tv_cancel Coverage Results" MODIFIED="1554947444839" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun_test_login_download.coverage" NAME="Unittests for downloadRun.DownLoadRun.test_login_download Coverage Results" MODIFIED="1555383840875" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang/download" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_test_Test.coverage" NAME="Unittests for test.Test Coverage Results" MODIFIED="1555038434234" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_splash_tv_skip.coverage" NAME="Unittests for advertisement.Ad.test_splash_tv_skip Coverage Results" MODIFIED="1553073934313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_searchAd_SearchAd_test_search_ad.coverage" NAME="Unittests for searchAd.SearchAd.test_search_ad Coverage Results" MODIFIED="1553163417850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun_test_play_is_downloaded.coverage" NAME="Unittests for downloadRun.DownLoadRun.test_play_is_downloaded Coverage Results" MODIFIED="1555385499796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang/download" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_iv_home.coverage" NAME="Unittests for advertisement.Ad.test_iv_home Coverage Results" MODIFIED="1551684903030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$search.coverage" NAME="search Coverage Results" MODIFIED="1548668089513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/app$search__1_.coverage" NAME="search (1) Coverage Results" MODIFIED="1549077828523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$vipAduio.coverage" NAME="vipAduio Coverage Results" MODIFIED="1552989214444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$praise.coverage" NAME="praise Coverage Results" MODIFIED="1553074850632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_banner.coverage" NAME="Unittests for advertisement.Ad.test_banner Coverage Results" MODIFIED="1551684107788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_home_slideshow.coverage" NAME="Unittests for advertisement.Ad.test_home_slideshow Coverage Results" MODIFIED="1553238266011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vip_homePage.coverage" NAME="Unittests for vipAduio.Vip.test_vip_homePage Coverage Results" MODIFIED="1553241647332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/vipAduio" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_adRun_Ad.coverage" NAME="Unittests for adRun.Ad Coverage Results" MODIFIED="1554889114028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_praises_Praise_test_complaints.coverage" NAME="Unittests for praises.Praise.test_complaints Coverage Results" MODIFIED="1553074934886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun_test_no_apply_cancle.coverage" NAME="Unittests for downloadRun.DownLoadRun.test_no_apply_cancle Coverage Results" MODIFIED="1555399348088" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/download" />
+    <SUITE FILE_PATH="coverage/app$Unittests_in_layoutIvBg_py.coverage" NAME="Unittests in layoutIvBg.py Coverage Results" MODIFIED="1553071355398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_layoutIvBg_LayoutIvBg_test_aa_layout_iv_bg.coverage" NAME="Unittests for layoutIvBg.LayoutIvBg.test_aa_layout_iv_bg Coverage Results" MODIFIED="1553072024477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip.coverage" NAME="Unittests for vipAduio.Vip Coverage Results" MODIFIED="1552017782116" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_search_ad.coverage" NAME="Unittests for advertisement.Ad.test_search_ad Coverage Results" MODIFIED="1551692459091" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vip01.coverage" NAME="Unittests for vipAduio.Vip.test_vip01 Coverage Results" MODIFIED="1551771003637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
@@ -51,73 +72,38 @@
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad.coverage" NAME="Unittests for advertisement.Ad Coverage Results" MODIFIED="1551758046307" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_aa_layout_iv_bg__1_.coverage" NAME="Unittests for advertisement.Ad.test_aa_layout_iv_bg (1) Coverage Results" MODIFIED="1553070865862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_ad.coverage" NAME="Unittests for advertisement.Ad.test_ad Coverage Results" MODIFIED="1553071605025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_splash_tv_skip.coverage" NAME="Unittests for advertisement.Ad.test_splash_tv_skip Coverage Results" MODIFIED="1553073934313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun_test_no_apply.coverage" NAME="Unittests for downloadRun.DownLoadRun.test_no_apply Coverage Results" MODIFIED="1555396647501" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/download" />
     <SUITE FILE_PATH="coverage/app$1.coverage" NAME="1 Coverage Results" MODIFIED="1549009407157" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_searchAd_SearchAd_test_search_ad.coverage" NAME="Unittests for searchAd.SearchAd.test_search_ad Coverage Results" MODIFIED="1553163417850" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
     <SUITE FILE_PATH="coverage/app$isVip.coverage" NAME="isVip Coverage Results" MODIFIED="1552035046607" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_iv_home.coverage" NAME="Unittests for advertisement.Ad.test_iv_home Coverage Results" MODIFIED="1551684903030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$search.coverage" NAME="search Coverage Results" MODIFIED="1548668089513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/app$search__1_.coverage" NAME="search (1) Coverage Results" MODIFIED="1549077828523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$vipAduio.coverage" NAME="vipAduio Coverage Results" MODIFIED="1552989214444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_dailyword.coverage" NAME="Unittests for advertisement.Ad.test_dailyword Coverage Results" MODIFIED="1551695100645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_my_MyTest_test_my.coverage" NAME="Unittests for my.MyTest.test_my Coverage Results" MODIFIED="1551167974552" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_vip_ad.coverage" NAME="Unittests for advertisement.Ad.test_vip_ad Coverage Results" MODIFIED="1551693343547" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$praise.coverage" NAME="praise Coverage Results" MODIFIED="1553074850632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_banner.coverage" NAME="Unittests for advertisement.Ad.test_banner Coverage Results" MODIFIED="1551684107788" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_home_slideshow.coverage" NAME="Unittests for advertisement.Ad.test_home_slideshow Coverage Results" MODIFIED="1553238266011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_apply_ApplayKe_test_noLogin_applyKe.coverage" NAME="Unittests for apply.ApplayKe.test_noLogin_applyKe Coverage Results" MODIFIED="1554946566045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_vipAduio_Vip_test_vip_homePage.coverage" NAME="Unittests for vipAduio.Vip.test_vip_homePage Coverage Results" MODIFIED="1553241647332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/vipAduio" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_apply_ApplayKe_test_noLogin_applyKe.coverage" NAME="Unittests for apply.ApplayKe.test_noLogin_applyKe Coverage Results" MODIFIED="1555049754421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang" />
+    <SUITE FILE_PATH="coverage/app$Unittests_for_downloadRun_DownLoadRun_test_noLogin_download.coverage" NAME="Unittests for downloadRun.DownLoadRun.test_noLogin_download Coverage Results" MODIFIED="1555382481230" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/ketang/download" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_splashAd_SplashAd.coverage" NAME="Unittests for splashAd.SplashAd Coverage Results" MODIFIED="1554888514124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_adRun_Ad.coverage" NAME="Unittests for adRun.Ad Coverage Results" MODIFIED="1554889114028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
-    <SUITE FILE_PATH="coverage/app$Unittests_for_praises_Praise_test_complaints.coverage" NAME="Unittests for praises.Praise.test_complaints Coverage Results" MODIFIED="1553074934886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_aa_layout_iv_bg.coverage" NAME="Unittests for advertisement.Ad.test_aa_layout_iv_bg Coverage Results" MODIFIED="1553070754528" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisements" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_wiki_audio_vip.coverage" NAME="Unittests for advertisement.Ad.test_wiki_audio_vip Coverage Results" MODIFIED="1553071941862" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
-    <SUITE FILE_PATH="coverage/app$Unittests_in_layoutIvBg_py.coverage" NAME="Unittests in layoutIvBg.py Coverage Results" MODIFIED="1553071355398" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
     <SUITE FILE_PATH="coverage/app$Unittests_for_advertisement_Ad_test_ketang_ad.coverage" NAME="Unittests for advertisement.Ad.test_ketang_ad Coverage Results" MODIFIED="1553071544203" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/testcase/advertisement" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/ketang/apply.py">
+        <entry file="file://$PROJECT_DIR$/testcase/download/downloadRun.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+            <state relative-caret-position="850">
+              <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
               <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/searchAd.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
+                <element signature="e#47#62#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/adRun.py">
+        <entry file="file://$PROJECT_DIR$/testcase/download/downloaded.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-              <folding>
-                <element signature="e#46#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testcase/advertisements/advertisement.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+            <state relative-caret-position="695">
+              <caret line="148" column="23" lean-forward="true" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
               <folding>
                 <element signature="e#46#68#0" expanded="true" />
               </folding>
@@ -125,13 +111,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+            <state relative-caret-position="332">
+              <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
               <folding>
                 <element signature="e#47#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcase/base/logOut.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+              <folding>
+                <element signature="e#46#81#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -164,20 +162,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/search.py" />
-        <option value="$PROJECT_DIR$/testcase/appaudio.py" />
-        <option value="$PROJECT_DIR$/testcase/1.py" />
-        <option value="$PROJECT_DIR$/tool/swipe.py" />
-        <option value="$PROJECT_DIR$/tool/isElementExist.py" />
-        <option value="$PROJECT_DIR$/run.py" />
-        <option value="$PROJECT_DIR$/testcase/my.py" />
-        <option value="$PROJECT_DIR$/testcase/search.py" />
-        <option value="$PROJECT_DIR$/testcase/order.py" />
-        <option value="$PROJECT_DIR$/tool/isElement.py" />
-        <option value="$PROJECT_DIR$/tool/back.py" />
-        <option value="$PROJECT_DIR$/testcase/VIPAduio.py" />
-        <option value="$PROJECT_DIR$/testcase/isLogin.py" />
-        <option value="$PROJECT_DIR$/testcase/isVip.py" />
         <option value="$PROJECT_DIR$/testcase/vipAduio.py" />
         <option value="$PROJECT_DIR$/testcase/vipPlay.py" />
         <option value="$PROJECT_DIR$/testcase/advertisement.py" />
@@ -189,10 +173,8 @@
         <option value="$PROJECT_DIR$/testcase/advertisement/advertisement.py" />
         <option value="$PROJECT_DIR$/testcase/advertisement/splashAd.py" />
         <option value="$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" />
-        <option value="$PROJECT_DIR$/testcase/base/login.py" />
         <option value="$PROJECT_DIR$/testcase/ketang/pay.py" />
         <option value="$PROJECT_DIR$/testcase/pay.py" />
-        <option value="$PROJECT_DIR$/tool/pageSourse.py" />
         <option value="$PROJECT_DIR$/tool/setting.py" />
         <option value="$PROJECT_DIR$/tool/setting.json" />
         <option value="$PROJECT_DIR$/testcase/json/loadConfigJson.py" />
@@ -200,18 +182,37 @@
         <option value="$PROJECT_DIR$/testcase/json/setting.json" />
         <option value="$PROJECT_DIR$/tool/loadConfigJson.py" />
         <option value="$PROJECT_DIR$/tool/connectServer.py" />
-        <option value="$PROJECT_DIR$/testcase/ketang/isBuyKe.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/praises.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/splashAd.py" />
-        <option value="$PROJECT_DIR$/testcase/advertisements/adRun.py" />
         <option value="$PROJECT_DIR$/testcase/base/isLogin.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/advertisement.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/afamousAd.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/layoutIvBg.py" />
         <option value="$PROJECT_DIR$/testcase/advertisements/searchAd.py" />
         <option value="$PROJECT_DIR$/testcase/base/isVip.py" />
-        <option value="$PROJECT_DIR$/testcase/ketang/apply.py" />
         <option value="$PROJECT_DIR$/testcase/vipAduio/vipAduio.py" />
+        <option value="$PROJECT_DIR$/testcase/advertisements/adRun.py" />
+        <option value="$PROJECT_DIR$/tool/pageSourse.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/apply.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/my_ketang.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/download/download_ke.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/download/downLoadManager.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/isBuyKe.py" />
+        <option value="$PROJECT_DIR$/tool/isElement.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/download/downloaded.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/download/downloadKe.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/download/downloadRun.py" />
+        <option value="$PROJECT_DIR$/testcase/download/downloadKe.py" />
+        <option value="$PROJECT_DIR$/testcase/ketang/allKe.py" />
+        <option value="$PROJECT_DIR$/tool/getwebstate.py" />
+        <option value="$PROJECT_DIR$/tool/ConnectionType.py" />
+        <option value="$PROJECT_DIR$/testcase/test.py" />
+        <option value="$PROJECT_DIR$/testcase/base/logOut.py" />
+        <option value="$PROJECT_DIR$/testcase/base/login.py" />
+        <option value="$PROJECT_DIR$/HTMLtEST.py" />
+        <option value="$PROJECT_DIR$/testcase/download/downloadRun.py" />
+        <option value="$PROJECT_DIR$/testcase/download/downloaded.py" />
+        <option value="$PROJECT_DIR$/run.py" />
       </list>
     </option>
   </component>
@@ -227,22 +228,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="tool" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,45 +245,21 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="testcase" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="advertisements" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="ketang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="testcase" type="462c0819:PsiDirectoryNode" />
-              <item name="vipAduio" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="tool" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="tool" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -319,11 +280,11 @@
       <recent name="D:\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\app\HTMLTestRunner" />
+      <recent name="D:\app\testcase" />
       <recent name="D:\app\testcase\json" />
       <recent name="D:\app\tool" />
       <recent name="D:\app\testcase\pay" />
-      <recent name="D:\app\testcase\payType" />
-      <recent name="D:\app\testcase\vipAduio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -338,7 +299,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for adRun.Ad.test_search_ad">
+  <component name="RunManager" selected="Python.run">
     <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -361,73 +322,73 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for adRun.Ad.test_ask_tv_cancel" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for downloadRun.DownLoadRun.test_no_apply" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/advertisements" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/download" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;adRun.Ad.test_ask_tv_cancel&quot;" />
+      <option name="_new_target" value="&quot;downloadRun.DownLoadRun.test_no_apply&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for adRun.Ad.test_search_ad" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for downloadRun.DownLoadRun.test_no_apply_cancle" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/advertisements" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/download" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;adRun.Ad.test_search_ad&quot;" />
+      <option name="_new_target" value="&quot;downloadRun.DownLoadRun.test_no_apply_cancle&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for apply.ApplayKe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for test.Test.test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/ketang" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;apply.ApplayKe&quot;" />
+      <option name="_new_target" value="&quot;test.Test.test&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for testcase.download.downloadRun.DownLoadRun.test_play_is_downloaded" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="app" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/ketang" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcase/download" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;apply.ApplayKe.test_noLogin_applyKe&quot;" />
+      <option name="_new_target" value="&quot;testcase.download.downloadRun.DownLoadRun.test_play_is_downloaded&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for adRun.Ad.test_search_ad" />
         <item itemvalue="Python.run" />
-        <item itemvalue="Python tests.Unittests for adRun.Ad.test_ask_tv_cancel" />
-        <item itemvalue="Python tests.Unittests for apply.ApplayKe.test_noLogin_applyKe" />
-        <item itemvalue="Python tests.Unittests for apply.ApplayKe" />
+        <item itemvalue="Python tests.Unittests for test.Test.test" />
+        <item itemvalue="Python tests.Unittests for downloadRun.DownLoadRun.test_no_apply_cancle" />
+        <item itemvalue="Python tests.Unittests for downloadRun.DownLoadRun.test_no_apply" />
+        <item itemvalue="Python tests.Unittests for testcase.download.downloadRun.DownLoadRun.test_play_is_downloaded" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +433,14 @@
       <workItem from="1554270265795" duration="1601000" />
       <workItem from="1554773310953" duration="18442000" />
       <workItem from="1554876431637" duration="14073000" />
-      <workItem from="1554946120074" duration="5052000" />
+      <workItem from="1554946120074" duration="7089000" />
+      <workItem from="1555033632183" duration="11143000" />
+      <workItem from="1555310065904" duration="11625000" />
+      <workItem from="1555378503495" duration="20335000" />
+      <workItem from="1555917705255" duration="599000" />
+      <workItem from="1556008434909" duration="6891000" />
+      <workItem from="1557715487099" duration="8251000" />
+      <workItem from="1557738820102" duration="2086000" />
     </task>
     <task id="LOCAL-00001" summary="提交版本">
       <created>1551865541161</created>
@@ -537,43 +505,57 @@
       <option name="project" value="LOCAL" />
       <updated>1553477887193</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="1.配置文件，解析json&#10;2.优化代码&#10;3.报名&#10;4.登录&#10;5.">
+      <created>1554972045476</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554972045476</updated>
+    </task>
+    <task id="LOCAL-00011" summary="测报报告生成">
+      <created>1557734667647</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1557734667647</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_apply_ApplayKe_test_noLogin_applyKe - 2019.04.10 at 17h 59m 37s.xml">
-      <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 06m 48s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe_test_noLogin_applyKe - 2019.04.10 at 18h 02m 14s.xml">
-      <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 08m 29s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe - 2019.04.10 at 18h 05m 55s.xml">
-      <configuration name="Unittests for apply.ApplayKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 09m 31s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe - 2019.04.10 at 18h 11m 50s.xml">
-      <configuration name="Unittests for apply.ApplayKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 13m 52s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe - 2019.04.10 at 18h 14m 15s.xml">
-      <configuration name="Unittests for apply.ApplayKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 15m 18s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe_test_noLogin_applyKe - 2019.04.11 at 09h 32m 22s.xml">
-      <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 18m 14s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe_test_noLogin_applyKe - 2019.04.11 at 09h 35m 04s.xml">
-      <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 19m 35s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_apply_ApplayKe_test_noLogin_applyKe - 2019.04.11 at 09h 37m 37s.xml">
-      <configuration name="Unittests for apply.ApplayKe.test_noLogin_applyKe" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 20m 47s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_adRun_Ad_test_ask_tv_cancel - 2019.04.11 at 09h 51m 09s.xml">
-      <configuration name="Unittests for adRun.Ad.test_ask_tv_cancel" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.04.23 at 18h 27m 24s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_adRun_Ad_test_search_ad - 2019.04.11 at 16h 36m 48s.xml">
-      <configuration name="Unittests for adRun.Ad.test_search_ad" configurationId="tests" />
+    <history-entry file="Unittests_for_test_Test_test - 2019.05.13 at 17h 19m 50s.xml">
+      <configuration name="Unittests for test.Test.test" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226167000" />
+    <option name="totallyTimeSpent" value="289134000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -588,12 +570,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16897655" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1369936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4989339" visible="true" weight="0.32850778" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8454158" visible="true" weight="0.1804009" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.8454158" visible="true" weight="0.15367483" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6902985" weight="0.4532294" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -658,36 +640,11 @@
     <MESSAGE value="大咖播放页" />
     <MESSAGE value="优化代码" />
     <MESSAGE value="结果报告" />
-    <option name="LAST_COMMIT_MESSAGE" value="结果报告" />
+    <MESSAGE value="1.配置文件，解析json&#10;2.优化代码&#10;3.报名&#10;4.登录&#10;5." />
+    <MESSAGE value="测报报告生成" />
+    <option name="LAST_COMMIT_MESSAGE" value="测报报告生成" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test_report/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/test_report/2019-01-28 17-34-56.html" />
-    <entry file="file://$PROJECT_DIR$/testcase/appaudio.py" />
-    <entry file="file://$PROJECT_DIR$/test_report/2019-01-29 15-34-58.html" />
-    <entry file="file://$PROJECT_DIR$/testcase/1.py" />
-    <entry file="file://E:/soft/Python37/Lib/unittest/suite.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/soft/Python37/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="662" selection-start-line="662" selection-end-line="662" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_report/2019-02-12 14-07-37.html" />
-    <entry file="file://$PROJECT_DIR$/HTMLTestRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1775">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tool/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -706,36 +663,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipPlay.py" />
     <entry file="file://$PROJECT_DIR$/testcase/pay.py" />
-    <entry file="file://$PROJECT_DIR$/tool/pageSourse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="29" column="76" lean-forward="true" selection-start-line="29" selection-start-column="76" selection-end-line="29" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/loadConfigJson.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/ketang/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/json/setting.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/ketang/isBuyKe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="40" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcase/advertisements/praises.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -787,13 +716,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/base/login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/pay/payType.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -808,87 +730,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tool/connectServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="17" lean-forward="true" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding>
-            <element signature="e#46#76#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/isElement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="40" column="7" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tool/swipe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/base/isLogin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#46#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcase/vipAduio/vipAduio.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="415">
           <caret line="119" lean-forward="true" selection-start-line="119" selection-end-line="119" />
-          <folding>
-            <element signature="e#46#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="14" column="44" lean-forward="true" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding>
-            <element signature="e#47#56#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/ketang/apply.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="20" column="58" lean-forward="true" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-          <folding>
-            <element signature="e#46#61#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/advertisements/advertisement.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
-          <folding>
-            <element signature="e#46#68#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcase/advertisements/adRun.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="46" column="16" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
           </folding>
@@ -901,6 +746,263 @@
           <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
           <folding>
             <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/json/setting.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/loadConfigJson.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/swipe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/pageSourse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/remote_connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="373" selection-start-line="373" selection-end-line="373" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/isElement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="24" column="34" lean-forward="true" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/ketang/isBuyKe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+          <folding>
+            <element signature="e#56#78#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/advertisements/adRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="78" column="42" lean-forward="true" selection-start-line="78" selection-start-column="42" selection-end-line="78" selection-end-column="42" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/ketang/my_ketang.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/ketang/apply.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="60" column="48" lean-forward="true" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/advertisements/advertisement.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="110" column="10" lean-forward="true" selection-start-line="110" selection-start-column="10" selection-end-line="110" selection-end-column="10" />
+          <folding>
+            <element signature="e#46#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/ketang/allKe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding>
+            <element signature="e#46#80#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/extensions/network.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="28" column="8" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/connectServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#46#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/command.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1228">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/mobile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-534">
+          <caret line="51" column="44" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/connectiontype.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+          <folding>
+            <element signature="e#46#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/getwebstate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tool/ConnectionType.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/isLogin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="61" lean-forward="true" selection-start-line="13" selection-start-column="61" selection-end-line="13" selection-end-column="61" />
+          <folding>
+            <element signature="e#46#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/download/downLoadManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="62" lean-forward="true" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/download/downloadKe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="33" column="9" lean-forward="true" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
+          <folding>
+            <element signature="e#46#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner.py_2">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HTMLTestRunner/HTMLTestRunner_py3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="66" lean-forward="true" selection-start-line="29" selection-start-column="66" selection-end-line="29" selection-end-column="66" />
+          <folding>
+            <element signature="e#3389#3404#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/download/downloadRun.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="38" column="37" selection-start-line="38" selection-start-column="37" selection-end-line="38" selection-end-column="37" />
+          <folding>
+            <element signature="e#47#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/base/logOut.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#46#81#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcase/download/downloaded.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="148" column="23" lean-forward="true" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
+          <folding>
+            <element signature="e#46#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_report/2019-05-13 17-20-16.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="17" column="44" lean-forward="true" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#47#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

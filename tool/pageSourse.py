@@ -1,48 +1,25 @@
-#!/usr/bin/env python 
-# -*- coding:utf-8 -*-
-def count_list_item_vertical(self):
-    driver=self.driver
-    items = driver.find_elements_by_xpath(self.path + "/*[@class='android.widget.FrameLayout']") ##获取初始状态时界面上展示的列表项
-    num = len(items) ##获取初始状态时界面上展示的列表项的个数作为初始数目
-    h = items[0].size.get('height') ##获得单个列表项的高度
-
-    swiped = True ##滑动标识
-    while swiped:
-        ###滑动前列表各参数
-        beforeswipe = driver.page_source
-        beforeRv = find_element.found_element_by_class(self,driver)
-        beforeRvHeight = beforeRv.size.get('height')
-        beforeRvX = beforeRv.location.get('x')
-        beforeRvY = beforeRv.location.get('y')
-        beforeItems = driver.find_elements_by_xpath(self.path + "/*[@class='android.widget.FrameLayout']")
-        beforeItemsSize = len(beforeItems)
-        beforeBottomHeight = beforeItems[beforeItemsSize - 1].size.get('height')
-
-        driver.swipe(beforeRvX, beforeRvY + beforeRvHeight * 0.5, beforeRvX,
-                     beforeRvY + beforeRvHeight * 0.5 - h * 0.8, 0)
-
-        ###滑动后列表各参数
-        afterswipe = driver.page_source
-        afterRv = find_element.found_element_by_class(self,driver)
-        afterRvHeight = afterRv.size.get('height')
-        afterItems = driver.find_elements_by_xpath(self.path + "/*[@class='android.widget.FrameLayout']")
-        afterItemsSize = len(afterItems)
-        afterBottomHeight = afterItems[afterItemsSize - 1].size.get('height')
+from time import sleep
+import tool.swipe as swipe
 
 
-        ##首先判断列表是否滑动到尽头
-        if afterswipe == beforeswipe:
-            swiped = False
+# 判断是否滑动到底部：
+def test_pageSourse(self):
+    # 第一次滑动前，获取最后一个元素
+    infolists1 = self.driver.find_elements_by_id('tv_title')
+    originalinfo = infolists1[(len(infolists1) - 1)].text
+    print(originalinfo)
+    sleep(5)
+    isSwipe = True
+    # 滑动
+    while isSwipe:
+        screen = swipe.get_size(self)
+        self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 1000)
+        infolists2 = self.driver.find_elements_by_id('tv_title')
+        currentinfo= infolists2[(len(infolists1) - 1)].text
+        if currentinfo!=originalinfo:
+            originalinfo= currentinfo
+            self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 1000)
         else:
-            ##比较滑动前后，列表的高度变化
-            if afterRvHeight > beforeRvHeight:
-                num = afterItemsSize ##列表高度增加的情况下，滑动后界面上展示的列表项个数即为列表项个数
-                swiped = True
-            elif afterRvHeight == beforeRvHeight:
-                ##列表高度不变时，比较界面中展示的最后一个列表项的高度变化
-                if afterBottomHeight < beforeBottomHeight:
-                    num = num +1 ##最后一个列表项高度减少时，列表项个数加1
-                swiped = True
-            elif afterRvHeight < beforeRvHeight:
-                swiped = False
-    print(num)
+            isSwipe = False
+            print(currentinfo)
+            print("This is the buttom")

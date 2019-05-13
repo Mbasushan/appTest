@@ -6,8 +6,7 @@ import time
 import unittest
 import sys
 
-import HTMLTestRunner_py3
-from HTMLTestRunner import HTMLTestRunner
+from HTMLTestRunner import HTMLTestRunner_py3
 
 test_dir = './testcase'
 discover = unittest.defaultTestLoader.discover(start_dir='./testcase', pattern="*.py")
@@ -22,6 +21,6 @@ if __name__ == "__main__":
 
     with open(report_name, 'wb')as f:
         #runner = HTMLTestRunner(stream=f, title="测试报告", description="本测试报告内容为APP搜索测试")
-        runner = HTMLTestRunner_py3.HTMLTestRunner(stream=f,verbosity=2,title='android自动化测试报告',description='执行人：sxs')
+        runner = HTMLTestRunner_py3.HTMLTestRunner(stream=f, verbosity=2, title='android自动化测试报告', description='执行人：sxs')
         runner.run(discover)
 

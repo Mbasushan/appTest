@@ -25,6 +25,12 @@ def find_Element(self, type, value):
             except Exception as e:
                 print("未找到%type--%value" % (type, value))
                 return False
+        elif type=='class':
+            try:
+                return self.driver.find_element(By.CLASS_NAME, value)
+            except Exception as e:
+                print("未找到%type--%value" % (type, value))
+                return False
     except:
         print("此处已抛异常---------------find_Element")
         self.take_screenShot("find_Element")

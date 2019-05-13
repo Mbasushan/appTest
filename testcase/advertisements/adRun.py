@@ -87,6 +87,5 @@ class Ad(unittest.TestCase):
         splashAd.test_ad(self)
 
 
-
     def tearDown(self):
         self.driver.quit()
