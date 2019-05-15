@@ -14,7 +14,7 @@ import testcase.advertisements.searchAd as searchAd
 class Ad(unittest.TestCase):
 
     def setUp(self):
-        jsonPath = 'D:/app/testcase/json/setting.json'
+        jsonPath = 'C:\Soft\Jenkins\workspace\appTest\testcase\json'
         self.driver=connectServer.connect_server(jsonPath)
         sleep(5)
 
