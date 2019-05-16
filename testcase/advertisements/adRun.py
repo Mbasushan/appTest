@@ -14,8 +14,7 @@ import testcase.advertisements.searchAd as searchAd
 class Ad(unittest.TestCase):
 
     def setUp(self):
-        jsonPath = 'C:\Soft\Jenkins\workspace\appTest\testcase\json'
-        self.driver=connectServer.connect_server(jsonPath)
+        self.driver=connectServer.connect_server()
         sleep(5)
 
     # 判断是否有引导图
