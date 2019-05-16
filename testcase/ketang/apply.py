@@ -17,8 +17,7 @@ import tool.connectServer as connectServer
 class ApplayKe(unittest.TestCase):
 
     def setUp(self):
-        jsonPath = 'D:/app/testcase/json/setting.json'
-        self.driver=connectServer.connect_server(jsonPath)
+        self.driver=connectServer.connect_server()
         sleep(5)
 
     #进入课程详情页
