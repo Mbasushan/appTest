@@ -27,7 +27,7 @@ def isVip(self):
 
     print("从首页的【今日推荐】的【大咖讲百科】进入大咖首页")
     self.driver.find_elements_by_id('ivSection')[0].click()
-    sleep(5)
+    sleep(6)
     tvDesc=self.driver.find_element_by_id('tvdesc').text
     print("tvdesc的值：",tvDesc)
     if tvDesc=='专享大咖讲解':

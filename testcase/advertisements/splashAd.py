@@ -33,7 +33,7 @@ def test_noSkip(self):
         print('test_noSkip无闪屏广告')
 
 
-# 点击闪屏广告
+# 判断是否有更新弹窗
 def test_ad(self):
     # 判断是否有更新弹窗
     splash = isElement.find_Element(self, 'id', 'splash_iv_image')

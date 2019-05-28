@@ -10,26 +10,17 @@ import tool.isElement as isElement
 import tool.back as back
 import testcase.base.isVip as Isvip
 import tool.swipe as swipe
+import tool.connectServer as connectServer
 
 class Vip(unittest.TestCase):
 
     def setUp(self):
-        desired_caps = {}
-        desired_caps['automationName'] = 'Appium'
-        desired_caps['autoLaunch'] = 'true'# Appium是否要自动启动或安装app，默认true
-        desired_caps['platformName'] = 'Android'
-        # desired_caps['version']='8.0.0'
-        desired_caps['version'] = '6.0'
-        #desired_caps['deviceName'] = 'DIG-TL10'  # 这是测试机的型号，可以查看手机的关于本机选项获得
-        desired_caps['deviceName']='STF-AL00'#这是测试机的型号，可以查看手机的关于本机选项获得
-        # desired_caps['app'] = PATH('D:\pythonScript\app-debug.apk')#被测试的App在电脑上的位置
-        desired_caps['appPackage'] = 'com.mbalib.android.wiki'
-        desired_caps['appActivity'] = 'com.mbalib.android.modules.main.app.controller.SplashActivity'
-        self.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', desired_caps)
+        self.driver=connectServer.connect_server()
         sleep(5)
 
     #从首页的【今日推荐】的【大咖讲百科】进入大咖首页
     def test_vipAduio01(self):
+        """从首页的【今日推荐】的【大咖讲百科】进入大咖首页"""
         # 判断是否有闪屏广告
         splashAd.test_ad(self)
         # 判断是否有首页广告
@@ -43,6 +34,7 @@ class Vip(unittest.TestCase):
 
     #从首页的【今日推荐】的【专区】进入大咖首页
     def test_vipAduioMore(self):
+        """从首页的【今日推荐】的【专区】进入大咖首页"""
         # 判断是否有闪屏广告
         splashAd.test_ad(self)
         # 判断是否有首页广告
@@ -56,6 +48,7 @@ class Vip(unittest.TestCase):
 
     #点击首页的【今日推荐】的音频进入大咖播放页
     def test_vipAduioPlay(self):
+        """点击首页的【今日推荐】的音频进入大咖播放页"""
         # 判断是否有闪屏广告
         splashAd.test_ad(self)
         # 判断是否有首页广告
@@ -105,6 +98,7 @@ class Vip(unittest.TestCase):
 
     #app首页【大咖讲百科】入口
     def test_vip_homePage(self):
+        """app首页【大咖讲百科】入口"""
         print("app首页【大咖讲百科】入口")
         # 判断是否有闪屏广告
         splashAd.test_ad(self)

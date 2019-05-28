@@ -54,8 +54,9 @@ def test_search_ad(self):
     # 切换到资讯搜索页
     print("切换到资讯搜索页")
     self.driver.find_element_by_name('资讯').click()
-    IvImageAd = isElement.find_Element(self, 'id', 'IvImageAd')
-    if IvImageAd:
+    sleep(5)
+    newsImag = isElement.find_Element(self, 'id', 'IvImageAd')
+    if newsImag:
         print("存在资讯搜索页广告")
         self.driver.find_element_by_id('IvImageAd').click()
         sleep(5)
@@ -63,3 +64,5 @@ def test_search_ad(self):
     else:
         print("不存在资讯搜索页广告")
     sleep(5)
+
+

@@ -59,7 +59,7 @@ def test_home_slideshow(self):
     # 返回
     back.ivBack(self)
 
-#app首页广告
+#app首页横幅广告
 def test_home_banner(self):
     print('首页横幅广告')
     # 判断是否有闪屏广告

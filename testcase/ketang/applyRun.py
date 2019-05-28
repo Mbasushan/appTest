@@ -2,9 +2,6 @@
 # -*- coding:utf-8 -*-
 import unittest
 from time import sleep
-
-from selenium import webdriver
-from appium import webdriver
 import testcase.advertisements.advertisement as Ads
 import tool.swipe as swipe
 import testcase.base.isLogin as IsLogin
@@ -22,6 +19,7 @@ class ApplayKe(unittest.TestCase):
 
     #进入课程详情页
     def test_noLogin_applyKe(self):
+        """进入课程详情页，判断用户是否报名"""
         #判断是否登录
         isLogin=IsLogin.isLogin(self)
         print("未登录点击【报名】")
@@ -72,6 +70,9 @@ class ApplayKe(unittest.TestCase):
                 #判断是否登录
                 if isLogin:
                     print("用户已登录，判断该课程是否已经购买")
+                    keTitle=self.driver.find_element_by_id('').text
+                    #课程标题
+                    isBuyKe.is_buy_ke(self,keTitle)
                 else:
                     print("不存在报名按钮，又未登录")
         else:
