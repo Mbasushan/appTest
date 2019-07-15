@@ -27,8 +27,6 @@ def test_noSkip(self):
     if splash:
         print('有闪屏广告不做操作等倒计时')
         sleep(10)
-        # 判断是否有首页广告
-        Ads.test_is_ad(self)
     else:
         print('test_noSkip无闪屏广告')
 

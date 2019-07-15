@@ -50,21 +50,39 @@ class Ad(unittest.TestCase):
     # app轮播图
     def test_home_slideshow(self):
         """app轮播图"""
+        splashAd.test_ad(self)
+        # 判断是否有首页广告
+        ad.test_is_ad(self)
         ad.test_home_slideshow(self)
 
     # app首页横幅广告
     def test_home_banner(self):
         """app首页横幅广告"""
+        # 判断是否有闪屏广告
+        splashAd.test_ad(self)
+        # 判断是否有首页广告
+        ad.test_is_ad(self)
         ad.test_home_banner(self)
 
     # 大咖开通页背景广告位
     def test_wiki_audio_vip(self):
         """大咖开通页背景广告位"""
+        # 判断是否有闪屏广告
+        splashAd.test_ad(self)
+        # 判断是否有首页广告
+        ad.test_is_ad(self)
         ad.test_wiki_audio_vip(self)
 
     # app课堂首页广告
     def test_ketang_ad(self):
         """app课堂首页广告"""
+        # 判断是否有闪屏广告
+        splashAd.test_ad(self)
+        # 判断是否有首页广告
+        ad.test_is_ad(self)
+        # 切换到课堂
+        self.driver.find_element_by_name('课堂').click()
+        sleep(5)
         ad.test_ketang_ad(self)
 
     # 有句名言广告位

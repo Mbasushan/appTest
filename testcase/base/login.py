@@ -4,6 +4,7 @@
 from time import sleep
 import tool.isElement as isElements
 import tool.swipe as swipe
+import testcase.ketang.isMiniPlay as miniPlay
 
 def login_phone(self):
     print("手机号登录")
@@ -32,15 +33,9 @@ def login_userName(self):
 #退出登录
 def log_out(self):
     # 切换到我的
-    isElement=isElements.find_Element(self,'name','设置')
-    if isElement:
-        self.driver.find_element_by_name('设置').click()
-    else:
-        screen = swipe.get_size(self)
-        self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
-
+    self.driver.find_element_by_id('iv_my_fragment_setting').click()
     sleep(5)
-    self.driver.find_element_by_name('账号安全').click()
+    self.driver.find_element_by_id('setting_item_safe').click()
     sleep(5)
     self.driver.find_element_by_id('account_tv_exit').click()
     self.driver.find_element_by_id('ask_tv_confirm').click()

@@ -50,9 +50,6 @@ def test_is_ad(self):
 def test_home_slideshow(self):
     print('banner图')
     # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    #判断是否有首页广告
-    test_is_ad(self)
     sleep(5)
     #点击banner
     self.driver.find_element_by_id('bannerContainer').click()
@@ -62,10 +59,6 @@ def test_home_slideshow(self):
 #app首页横幅广告
 def test_home_banner(self):
     print('首页横幅广告')
-    # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    # 判断是否有首页广告
-    test_is_ad(self)
     #判断是否有首页横幅广告
     hengfu=isElement.find_Element(self,'id','iv_home_wiki')
     if hengfu:
@@ -80,10 +73,6 @@ def test_home_banner(self):
 #大咖开通页背景广告位
 def test_wiki_audio_vip(self):
     print("大咖开通页背景广告位")
-    # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    # 判断是否有首页广告
-    test_is_ad(self)
     screen = swipe.get_size(self)
     self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
     #进入大咖首页
@@ -104,13 +93,6 @@ def test_wiki_audio_vip(self):
 #app课堂首页广告
 def test_ketang_ad(self):
     print("课堂首页广告")
-    # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    # 判断是否有首页广告
-    test_is_ad(self)
-    #切换到课堂
-    self.driver.find_element_by_name('课堂').click()
-    sleep(5)
     #判断是否有弹窗广告
     llparent=isElement.find_Element(self,'id','llparent')
     if llparent:

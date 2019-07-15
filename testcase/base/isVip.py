@@ -7,15 +7,11 @@ import testcase.advertisements.advertisement as AdTest
 import testcase.advertisements.splashAd as splashAd
 import tool.isElement as isElement
 import tool.swipe as swipe
+import testcase.base.login as login
 
 #是否为大咖vip
 def isVip(self):
     print("是否为大咖vip")
-    # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    # 判断是否有首页广告
-    AdTest.test_is_ad(self)
-    sleep(5)
     #判断是否有首页横幅广告，有的话则往上滑动，显示出大咖讲百科内容
     hengfu = isElement.find_Element(self, 'id', 'iv_home_wiki')
     if hengfu:
@@ -38,3 +34,23 @@ def isVip(self):
         return False
     else:
         return True
+
+#课堂vip
+def isKeVip(self):
+    self.driver.find_element_by_name('我的').click()
+    #判断是否登录
+    isLogin = isElement.find_Element(self, 'id', 'tv_my_fragment_login_no_login')
+    if isLogin:
+        # 登录账号
+        login.login_userName(self)
+    else:
+        print("有登录")
+    #判断是否为vip
+    text=self.driver.find_element_by_id('tv_my_fragment_vip_ke_date').text
+    print("课堂vip",text)
+    if text=='已失效':
+        return '已失效'
+    elif text=="未开通":
+        return '未开通'
+    else:
+        return 'vip'
