@@ -13,10 +13,6 @@ import testcase.advertisements.splashAd as splashAd
 # 搜索里的广告
 def test_search_ad(self):
     print('搜索首页广告')
-    # 判断是否有闪屏广告
-    splashAd.test_ad(self)
-    # 判断是否有首页广告
-    Ads.test_is_ad(self)
     self.driver.find_element_by_id('toolbar_iv_search').click()
     sleep(5)
     # 收起键盘

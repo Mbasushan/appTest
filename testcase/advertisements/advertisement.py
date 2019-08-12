@@ -3,8 +3,6 @@
 from time import sleep
 import tool.isElement as isElement
 import tool.back as back
-import tool.swipe as swipe
-import testcase.advertisements.splashAd as splashAd
 
 #判断是否有更新版本弹窗---有点击稍后安装
 def test_ask_tv_cancel(self):
@@ -40,6 +38,9 @@ def test_is_ad(self):
         print('有首页广告')
         driver.find_element_by_id('image').click()
         sleep(5)
+        isWeixin = isElement.find_Element(self, 'id', 'tv_popu_course_bind_wx_bind')
+        if isWeixin:
+            self.driver.find_element_by_id('tv_popu_course_bind_wx_cancel').click()
         #返回
         back.ivBack(self)
     else:
@@ -69,26 +70,6 @@ def test_home_banner(self):
         print('不存在横幅广告')
 
 
-
-#大咖开通页背景广告位
-def test_wiki_audio_vip(self):
-    print("大咖开通页背景广告位")
-    screen = swipe.get_size(self)
-    self.driver.swipe(screen[0] * 0.5, screen[1] * 0.75, screen[0] * 0.5, screen[1] * 0.25, 6000)
-    #进入大咖首页
-    print("点击首页的大咖讲百科进入大咖首页")
-    self.driver.find_elements_by_id("com.mbalib.android.wiki:id/ivSection")[0].click()
-    #点击开通，进入开通页
-    self.driver.find_element_by_id('ll_header').click()
-    sleep(5)
-    vipAd=isElement.find_Element(self,'id','ivVipBanner')
-    if vipAd:
-        print("存在大咖开通页背景广告位")
-        self.driver.find_element_by_id('ivVipBanner').click()
-        sleep(5)
-        back.ivBack(self)
-    else:
-        print("不存在大咖开通页背景广告位")
 
 #app课堂首页广告
 def test_ketang_ad(self):

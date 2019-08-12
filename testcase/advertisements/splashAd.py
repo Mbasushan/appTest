@@ -31,18 +31,18 @@ def test_noSkip(self):
         print('test_noSkip无闪屏广告')
 
 
-# 判断是否有更新弹窗
-def test_ad(self):
-    # 判断是否有更新弹窗
-    splash = isElement.find_Element(self, 'id', 'splash_iv_image')
-    if splash:
-        print('点击闪屏广告')
-        self.driver.find_element_by_id('splash_iv_image').click()
-        sleep(5)
-        # 返回
-        back.ivBack(self)
-        # 执行操作：判断是否有闪屏广告
-        Ads.test_is_ad(self)
-    else:
-        print('test_ad无闪屏广告')
-
+# # 判断是否有更新弹窗
+# def test_ad(self):
+#     # 判断是否有更新弹窗
+#     splash = isElement.find_Element(self, 'id', 'splash_iv_image')
+#     if splash:
+#         print('点击闪屏广告')
+#         self.driver.find_element_by_id('splash_iv_image').click()
+#         sleep(5)
+#         # 返回
+#         back.ivBack(self)
+#         # 执行操作：判断是否有闪屏广告
+#         Ads.test_is_ad(self)
+#     else:
+#         print('test_ad无闪屏广告')
+#

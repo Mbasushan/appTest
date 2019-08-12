@@ -2,15 +2,10 @@
 # -*- coding:utf-8 -*-
 import unittest
 from time import sleep
-import testcase.advertisements.advertisement as ad
+import testcase.advertisements.adBase as adBase
 import tool.connectServer as connectServer
-import testcase.advertisements.splashAd as splashAd
-import testcase.advertisements.afamousAd as afamousAd
-import testcase.advertisements.layoutIvBg as LayoutIvBg
-import testcase.advertisements.praises as praises
 import testcase.base.login as logins
 import testcase.base.isLogin as isLogins
-import testcase.advertisements.searchAd as searchAd
 import tool.swipe as swipe
 
 
@@ -22,7 +17,7 @@ class Login(unittest.TestCase):
 
     def login_phone(self):
         """手机号登录"""
-        ad.test_is_ad(self)
+        adBase.adBase(self)
         # 判断是否登录
         isLogin = isLogins.isLogin(self)
         if isLogin:
@@ -39,7 +34,7 @@ class Login(unittest.TestCase):
 
     def login_username(self):
         """用户名登录"""
-        ad.test_is_ad(self)
+        adBase.adBase(self)
         # 判断是否登录
         isLogin = isLogins.isLogin(self)
         if isLogin:
